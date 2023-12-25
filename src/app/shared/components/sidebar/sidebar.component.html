@@ -6,7 +6,8 @@
     <button
       *ngFor="let item of tags let isFirst = first"
       [ngClass]="{'list-group-item-info': isFirst}"
-      class="list-group-item list-group-item-action">
+      class="list-group-item list-group-item-action"
+      (click)="searchTags(item)">
       {{ item | titlecase}}
     </button>
   </div>
