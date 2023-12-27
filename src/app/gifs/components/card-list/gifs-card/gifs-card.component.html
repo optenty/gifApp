@@ -1,0 +1,10 @@
+<div class="card mb-2 text-center bg-dark">
+  <!-- Lo ponemos con llaves cuadradas porque siempre cuando queramos asociar un atributo html a un valor del typescript se hace así -->
+<!--  <img [src]="gifCard.images.downsized_medium.url" [alt]='gifCard.title' class="card-img-top">-->
+  <shared-lazy-image [url]="gifCard.images.downsized_medium.url"></shared-lazy-image>
+  <div class="card-body text-white">
+    <p class="card-text">
+      {{ gifCard.title || 'No title' }}
+    </p>
+  </div>
+</div>
